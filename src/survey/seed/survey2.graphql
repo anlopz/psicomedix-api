@@ -1,0 +1,580 @@
+mutation {
+  createSurvey(
+    data: {
+      title: "CUESTIONARIO PARA IDENTIFICAR LOS FACTORES DE RIESGO PSICOSOCIAL EN LOS CENTROS DE TRABAJO"
+      sections: [
+        {
+          title: "I. Condiciones en el ambiente de trabajo"
+          position: 1
+          questions: [
+            {
+              position: 1
+              text: "Mi trabajo me exige hacer mucho esfuerzo físico"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+            {
+              position: 2
+              text: "Me preocupa sufrir un accidente en mi trabajo"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+            {
+              position: 3
+              text: "Considero que las actividades que realizo son peligrosas"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+            {
+              position: 4
+              text: "Por la cantidad de trabajo que tengo debo quedarme tiempo adicional a mi turno"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+            {
+              position: 5
+              text: "Por la cantidad de trabajo que tengo debo trabajar sin parar"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+            {
+              position: 6
+              text: "Considero que es necesario mantener un ritmo de trabajo acelerado"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+            {
+              position: 7
+              text: "Mi trabajo exige que esté muy concentrado"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+            {
+              position: 8
+              text: "Mi trabajo requiere que memorice mucha información"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+            {
+              position: 9
+              text: "Mi trabajo exige que atienda varios asuntos al mismo tiempo"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+          ]
+        }
+        {
+          title: "II. Carga de trabajo y responsabilidades"
+          position: 2
+          questions: [
+            {
+              position: 10
+              text: "En mi trabajo soy responsable de cosas de mucho valor"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+            {
+              position: 11
+              text: "Respondo ante mi jefe por los resultados de toda mi área de trabajo"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+            {
+              position: 12
+              text: "En mi trabajo me dan órdenes contradictorias"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+            {
+              position: 13
+              text: "Considero que en mi trabajo me piden hacer cosas innecesarias"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+          ]
+        }
+        {
+          title: "III. Jornada de trabajo"
+          position: 3
+          questions: [
+            {
+              position: 14
+              text: "Trabajo horas extras más de tres veces a la semana"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+            {
+              position: 15
+              text: "Mi trabajo me exige laborar en días de descanso, festivos o fines de semana"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+            {
+              position: 16
+              text: "Considero que el tiempo en el trabajo es mucho y perjudica mis actividades familiares o personales"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+            {
+              position: 17
+              text: "Pienso en las actividades familiares o personales cuando estoy en mi trabajo"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+          ]
+        }
+        {
+          title: "IV. Interferencia en la relación trabajo-familia"
+          position: 4
+          questions: [
+            {
+              position: 18
+              text: "Mi trabajo permite que desarrolle nuevas habilidades"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+            {
+              position: 19
+              text: "En mi trabajo puedo aspirar a un mejor puesto"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+            {
+              position: 20
+              text: "Durante mi jornada de trabajo puedo tomar pausas cuando las necesito"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+            {
+              position: 21
+              text: "Puedo decidir la velocidad a la que realizo mis actividades en mi trabajo"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+            {
+              position: 22
+              text: "Puedo cambiar el orden de las actividades que realizo en mi trabajo"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+          ]
+        }
+        {
+          title: "V. Capacitación"
+          position: 5
+          questions: [
+            {
+              position: 23
+              text: "Me informan con claridad cuáles son mis funciones"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+            {
+              position: 24
+              text: "Me explican claramente los resultados que debo obtener en mi trabajo"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+            {
+              position: 25
+              text: "Me informan con quién puedo resolver problemas o asuntos de trabajo"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+            {
+              position: 26
+              text: "Me permiten asistir a capacitaciones relacionadas con mi trabajo"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+            {
+              position: 27
+              text: "Recibo capacitación útil para hacer mi trabajo"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+          ]
+        }
+        {
+          title: "VI. Liderazgo y relaciones en el trabajo"
+          position: 6
+          questions: [
+            {
+              position: 28
+              text: "Mi jefe tiene en cuenta mis puntos de vista y opiniones"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+            {
+              position: 29
+              text: "Mi jefe ayuda a solucionar los problemas que se presentan en el trabajo"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+            {
+              position: 30
+              text: "Puedo confiar en mis compañeros de trabajo"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+            {
+              position: 31
+              text: "Cuando tenemos que realizar trabajo de equipo los compañeros colaborano"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+            {
+              position: 32
+              text: "Mis compañeros de trabajo me ayudan cuando tengo dificultades"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+            {
+              position: 33
+              text: "En mi trabajo puedo expresarme libremente sin interrupciones"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+            {
+              position: 34
+              text: "Recibo críticas constantes a mi persona y/o trabajo"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+            {
+              position: 35
+              text: "Recibo burlas, calumnias, humillaciones o ridiculizaciones"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+            {
+              position: 36
+              text: "Se ignora mi presencia o se me excluye de las reuniones de trabajo y en la toma de decisiones"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+            {
+              position: 37
+              text: "Se manipulan las situaciones de trabajo para hacerme parecer un mal trabajador"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+            {
+              position: 38
+              text: "Se ignoran mis éxitos laborales y se atribuyen a otros trabajadores"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+            {
+              position: 39
+              text: "Me bloquean o impiden las oportunidades que tengo para obtener ascenso o mejora en mi trabajo"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+            {
+              position: 40
+              text: "He presenciado actos de violencia en mi centro de trabajo"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+          ]
+        }
+        {
+          title: "VII. Exigencias emocionales del trabajo"
+          position: 7
+          questions: [
+            {
+              position: 41
+              text: "Atiendo clientes o usuarios muy enojados"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+            {
+              position: 42
+              text: "Mi trabajo me exige atender personas muy necesitadas de ayuda o enfermas"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+            {
+              position: 43
+              text: "Para hacer mi trabajo debo demostrar sentimientos distintos a los míos"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+          ]
+        }
+        {
+          title: "VIII. Problemas de comunicación y apoyo"
+          position: 8
+          questions: [
+            {
+              position: 44
+              text: "Comunican tarde los asuntos de trabajo"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+            {
+              position: 45
+              text: "Dificultan el logro de los resultados del trabajo"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+            {
+              position: 46
+              text: "Ignoran las sugerencias para mejorar su trabajo"
+              options: [
+                { text: "Siempre", position: 1 }
+                { text: "Casi siempre", position: 2 }
+                { text: "Algunas veces", position: 3 }
+                { text: "Casi nunca", position: 4 }
+                { text: "Nunca", position: 5 }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ) {
+    id
+    title
+    sections {
+      title
+      position
+      questions {
+        id
+        position
+        text
+        options {
+          id
+          position
+          text
+        }
+      }
+    }
+  }
+}

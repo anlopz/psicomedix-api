@@ -1,0 +1,129 @@
+mutation {
+  createSurvey(data: {
+    title: "CUESTIONARIO PARA IDENTIFICAR LOS FACTORES DE RIESGO PSICOSOCIAL EN LOS CENTROS DE TRABAJO"
+    sections: [
+      {
+        title: "I. Condiciones en el ambiente de trabajo"
+        position: 1
+        questions: [
+          {
+            position: 1
+            text: "Mi trabajo me exige hacer mucho esfuerzo físico"
+            options: [
+              { text: "Siempre", position: 1 },
+              { text: "Casi siempre", position: 2 },
+              { text: "Algunas veces", position: 3 },
+              { text: "Casi nunca", position: 4 },
+              { text: "Nunca", position: 5 }
+            ]
+          },
+          {
+            position: 2
+            text: "Me preocupa sufrir un accidente en mi trabajo"
+            options: [
+              { text: "Siempre", position: 1 },
+              { text: "Casi siempre", position: 2 },
+              { text: "Algunas veces", position: 3 },
+              { text: "Casi nunca", position: 4 },
+              { text: "Nunca", position: 5 }
+            ]
+          },
+          {
+            position: 3
+            text: "Considero que las actividades que realizo son peligrosas"
+            options: [
+              { text: "Siempre", position: 1 },
+              { text: "Casi siempre", position: 2 },
+              { text: "Algunas veces", position: 3 },
+              { text: "Casi nunca", position: 4 },
+              { text: "Nunca", position: 5 }
+            ]
+          },
+          {
+            position: 4
+            text: "Por la cantidad de trabajo que tengo debo quedarme tiempo adicional a mi turno"
+            options: [
+              { text: "Siempre", position: 1 },
+              { text: "Casi siempre", position: 2 },
+              { text: "Algunas veces", position: 3 },
+              { text: "Casi nunca", position: 4 },
+              { text: "Nunca", position: 5 }
+            ]
+          },
+          {
+            position: 5
+            text: "Por la cantidad de trabajo que tengo debo trabajar sin parar"
+            options: [
+              { text: "Siempre", position: 1 },
+              { text: "Casi siempre", position: 2 },
+              { text: "Algunas veces", position: 3 },
+              { text: "Casi nunca", position: 4 },
+              { text: "Nunca", position: 5 }
+            ]
+          },
+          {
+            position: 6
+            text: "Considero que es necesario mantener un ritmo de trabajo acelerado"
+            options: [
+              { text: "Siempre", position: 1 },
+              { text: "Casi siempre", position: 2 },
+              { text: "Algunas veces", position: 3 },
+              { text: "Casi nunca", position: 4 },
+              { text: "Nunca", position: 5 }
+            ]
+          },
+          {
+            position: 7
+            text: "Mi trabajo exige que esté muy concentrado"
+            options: [
+              { text: "Siempre", position: 1 },
+              { text: "Casi siempre", position: 2 },
+              { text: "Algunas veces", position: 3 },
+              { text: "Casi nunca", position: 4 },
+              { text: "Nunca", position: 5 }
+            ]
+          },
+          {
+            position: 8
+            text: "Mi trabajo requiere que memorice mucha información"
+            options: [
+              { text: "Siempre", position: 1 },
+              { text: "Casi siempre", position: 2 },
+              { text: "Algunas veces", position: 3 },
+              { text: "Casi nunca", position: 4 },
+              { text: "Nunca", position: 5 }
+            ]
+          },
+          {
+            position: 9
+            text: "Mi trabajo exige que atienda varios asuntos al mismo tiempo"
+            options: [
+              { text: "Siempre", position: 1 },
+              { text: "Casi siempre", position: 2 },
+              { text: "Algunas veces", position: 3 },
+              { text: "Casi nunca", position: 4 },
+              { text: "Nunca", position: 5 }
+            ]
+          }
+        ]
+      }
+    ]
+  }) {
+    id
+    title
+    sections {
+      title
+      position
+      questions {
+        id
+        position
+        text
+        options {
+          id
+          position
+          text
+        }
+      }
+    }
+  }
+}

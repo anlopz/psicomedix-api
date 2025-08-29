@@ -1,0 +1,210 @@
+mutation {
+  createSurvey(
+    data: {
+      title: "Guía de Referencia I - NOM-035"
+      sections: [
+        {
+          title: "I.- Acontecimiento traumático severo"
+          position: 1
+          questions: [
+            {
+              text: "¿Ha presenciado o sufrido alguna vez, durante o con motivo del trabajo un accidente que tenga como consecuencia la muerte, la pérdida de un miembro o una lesión grave?"
+              position: 1
+              options: [
+                { text: "Sí", position: 1 }
+                { text: "No", position: 2 }
+              ]
+            }
+            {
+              text: "¿Ha presenciado o sufrido alguna vez, durante o con motivo del trabajo un asalto?"
+              position: 2
+              options: [
+                { text: "Sí", position: 1 }
+                { text: "No", position: 2 }
+              ]
+            }
+            {
+              text: "¿Ha presenciado o sufrido alguna vez, durante o con motivo del trabajo un acto violento que derivó en lesiones graves?"
+              position: 3
+              options: [
+                { text: "Sí", position: 1 }
+                { text: "No", position: 2 }
+              ]
+            }
+            {
+              text: "¿Ha presenciado o sufrido alguna vez, durante o con motivo del trabajo un secuestro?"
+              position: 4
+              options: [
+                { text: "Sí", position: 1 }
+                { text: "No", position: 2 }
+              ]
+            }
+            {
+              text: "¿Ha presenciado o sufrido alguna vez, durante o con motivo del trabajo amenazas?"
+              position: 5
+              options: [
+                { text: "Sí", position: 1 }
+                { text: "No", position: 2 }
+              ]
+            }
+            {
+              text: "¿Ha presenciado o sufrido alguna vez, durante o con motivo del trabajo cualquier otro acontecimiento que ponga en riesgo su vida o salud, y/o la de otras personas??"
+              position: 6
+              options: [
+                { text: "Sí", position: 1 }
+                { text: "No", position: 2 }
+              ]
+            }
+          ]
+        }
+        {
+          title: "II.- Recuerdos persistentes sobre el acontecimiento (durante el último mes)"
+          position: 2
+          questions: [
+            {
+              text: "¿Ha tenido recuerdos recurrentes sobre el acontecimiento que le provocan malestares?"
+              position: 1
+              options: [
+                { text: "Sí", position: 1 }
+                { text: "No", position: 2 }
+              ]
+            }
+            {
+              text: "¿Ha tenido sueños de carácter recurrente sobre el acontecimiento, que le producen malestar?"
+              position: 2
+              options: [
+                { text: "Sí", position: 1 }
+                { text: "No", position: 2 }
+              ]
+            }
+          ]
+        }
+        {
+          title: "III.- Esfuerzo por evitar circunstancias parecidas o asociadas al acontecimiento (durante el último mes)"
+          position: 3
+          questions: [
+            {
+              text: "¿Se ha esforzado por evitar todo tipo de sentimientos, conversaciones o situaciones que le puedan recordar el acontecimiento?"
+              position: 1
+              options: [
+                { text: "Sí", position: 1 }
+                { text: "No", position: 2 }
+              ]
+            }
+            {
+              text: "¿Se ha esforzado por evitar todo tipo de actividades, lugares o personas que motivan recuerdos del acontecimiento?"
+              position: 2
+              options: [
+                { text: "Sí", position: 1 }
+                { text: "No", position: 2 }
+              ]
+            }
+            {
+              text: "¿Ha tenido dificultad para recordar alguna parte importante del evento?"
+              position: 3
+              options: [
+                { text: "Sí", position: 1 }
+                { text: "No", position: 2 }
+              ]
+            }
+            {
+              text: "¿Ha disminuido su interés en sus actividades cotidianas?"
+              position: 4
+              options: [
+                { text: "Sí", position: 1 }
+                { text: "No", position: 2 }
+              ]
+            }
+            {
+              text: "¿Se ha sentido usted alejado o distante de los demás?"
+              position: 5
+              options: [
+                { text: "Sí", position: 1 }
+                { text: "No", position: 2 }
+              ]
+            }
+            {
+              text: "¿Ha notado que tiene dificultad para expresar sus sentimientos?"
+              position: 6
+              options: [
+                { text: "Sí", position: 1 }
+                { text: "No", position: 2 }
+              ]
+            }
+            {
+              text: "¿Ha tenido la impresión de que su vida se va a acortar, que va a morir antes que otras personas o que tiene un futuro limitado?"
+              position: 7
+              options: [
+                { text: "Sí", position: 1 }
+                { text: "No", position: 2 }
+              ]
+            }
+          ]
+        }
+        {
+          title: "IV Afectación (durante el último mes)"
+          position: 4
+          questions: [
+            {
+              text: "¿Ha tenido usted dificultades para dormir?"
+              position: 1
+              options: [
+                { text: "Sí", position: 1 }
+                { text: "No", position: 2 }
+              ]
+            }
+            {
+              text: "¿Ha estado particularmente irritable o le han dado arranques de coraje?"
+              position: 2
+              options: [
+                { text: "Sí", position: 1 }
+                { text: "No", position: 2 }
+              ]
+            }
+            {
+              text: "¿Ha tenido dificultad para concentrarse?"
+              position: 3
+              options: [
+                { text: "Sí", position: 1 }
+                { text: "No", position: 2 }
+              ]
+            }
+            {
+              text: "¿Ha estado nervioso o constantemente en alerta?"
+              position: 4
+              options: [
+                { text: "Sí", position: 1 }
+                { text: "No", position: 2 }
+              ]
+            }
+            {
+              text: "¿Se ha sobresaltado fácilmente por cualquier cosa?"
+              position: 5
+              options: [
+                { text: "Sí", position: 1 }
+                { text: "No", position: 2 }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ) {
+    id
+    title
+    sections {
+      title
+      position
+      questions {
+        id
+        text
+        position
+        options {
+          id
+          text
+          position
+        }
+      }
+    }
+  }
+}

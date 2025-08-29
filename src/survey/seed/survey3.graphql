@@ -1,0 +1,160 @@
+mutation {
+  createSurvey(data: {
+    title: "CUESTIONARIO PARA IDENTIFICAR LOS FACTORES DE RIESGO PSICOSOCIAL EN LOS CENTROS DE TRABAJO",
+    sections: [
+      {
+        title: "I. Condiciones ambientales de su centro de trabajo",
+        position: 1,
+        questions: [
+          {
+            position: 1,
+            text: "El espacio donde trabajo me permite realizar mis actividades de manera segura e higiénica",
+            options: [
+              { text: "Siempre", position: 1 },
+              { text: "Casi siempre", position: 2 },
+              { text: "Algunas veces", position: 3 },
+              { text: "Casi nunca", position: 4 },
+              { text: "Nunca", position: 5 },
+            ]
+          },
+          {
+            position: 2,
+            text: "Mi trabajo me exige hacer mucho esfuerzo físico",
+            options: [
+              { text: "Siempre", position: 1 },
+              { text: "Casi siempre", position: 2 },
+              { text: "Algunas veces", position: 3 },
+              { text: "Casi nunca", position: 4 },
+              { text: "Nunca", position: 5 },
+            ]
+          },
+          {
+            position: 3,
+            text: "Me preocupa sufrir un accidente en mi trabajo",
+            options: [
+              { text: "Siempre", position: 1 },
+              { text: "Casi siempre", position: 2 },
+              { text: "Algunas veces", position: 3 },
+              { text: "Casi nunca", position: 4 },
+              { text: "Nunca", position: 5 },
+            ]
+          },
+          {
+            position: 4,
+            text: "Considero que en mi trabajo se aplican las normas de seguridad y salud en el trabajo",
+            options: [
+              { text: "Siempre", position: 1 },
+              { text: "Casi siempre", position: 2 },
+              { text: "Algunas veces", position: 3 },
+              { text: "Casi nunca", position: 4 },
+              { text: "Nunca", position: 5 },
+            ]
+          },
+          {
+            position: 5,
+            text: "Considero que las actividades que realizo son peligrosas",
+            options: [
+              { text: "Siempre", position: 1 },
+              { text: "Casi siempre", position: 2 },
+              { text: "Algunas veces", position: 3 },
+              { text: "Casi nunca", position: 4 },
+              { text: "Nunca", position: 5 },
+            ]
+          },
+        ]
+      },
+      {
+        title: "II. Cantidad y ritmo de trabajo",
+        position: 2,
+        questions: [
+          {
+            position: 6,
+            text: "Por la cantidad de trabajo que tengo debo quedarme tiempo adicional a mi turno",
+            options: [
+              { text: "Siempre", position: 1 },
+              { text: "Casi siempre", position: 2 },
+              { text: "Algunas veces", position: 3 },
+              { text: "Casi nunca", position: 4 },
+              { text: "Nunca", position: 5 },
+            ]
+          },
+          {
+            position: 7,
+            text: "Por la cantidad de trabajo que tengo debo trabajar sin parar",
+            options: [
+              { text: "Siempre", position: 1 },
+              { text: "Casi siempre", position: 2 },
+              { text: "Algunas veces", position: 3 },
+              { text: "Casi nunca", position: 4 },
+              { text: "Nunca", position: 5 },
+            ]
+          },
+          {
+            position: 8,
+            text: "Considero que es necesario mantener un ritmo de trabajo acelerado",
+            options: [
+              { text: "Siempre", position: 1 },
+              { text: "Casi siempre", position: 2 },
+              { text: "Algunas veces", position: 3 },
+              { text: "Casi nunca", position: 4 },
+              { text: "Nunca", position: 5 },
+            ]
+          },
+        ]
+      },
+      {
+        title: "III. Esfuerzo mental",
+        position: 3,
+        questions: [
+          {
+            position: 9,
+            text: "Mi trabajo exige que esté muy concentrado",
+            options: [
+              { text: "Siempre", position: 1 },
+              { text: "Casi siempre", position: 2 },
+              { text: "Algunas veces", position: 3 },
+              { text: "Casi nunca", position: 4 },
+              { text: "Nunca", position: 5 },
+            ]
+          },
+          {
+            position: 10,
+            text: "Mi trabajo requiere que memorice mucha información",
+            options: [
+              { text: "Siempre", position: 1 },
+              { text: "Casi siempre", position: 2 },
+              { text: "Algunas veces", position: 3 },
+              { text: "Casi nunca", position: 4 },
+              { text: "Nunca", position: 5 },
+            ]
+          },
+          {
+            position: 11,
+            text: "En mi trabajo tengo que tomar decisiones difíciles muy rápido",
+            options: [
+              { text: "Siempre", position: 1 },
+              { text: "Casi siempre", position: 2 },
+              { text: "Algunas veces", position: 3 },
+              { text: "Casi nunca", position: 4 },
+              { text: "Nunca", position: 5 },
+            ]
+          },
+          {
+            position: 12,
+            text: "Mi trabajo exige que atienda varios asuntos al mismo tiempo",
+            options: [
+              { text: "Siempre", position: 1 },
+              { text: "Casi siempre", position: 2 },
+              { text: "Algunas veces", position: 3 },
+              { text: "Casi nunca", position: 4 },
+              { text: "Nunca", position: 5 },
+            ]
+          },
+        ]
+      },
+    ]
+  }) {
+    id
+    title
+  }
+}
