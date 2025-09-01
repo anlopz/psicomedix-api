@@ -8,13 +8,17 @@ import { PrismaService } from './prisma/prisma.service';
 import { UserService } from './user/user.service';
 import { SurveyModule } from './survey/survey.module';
 import { PrismaModule } from './prisma/prisma.module';
+import { ConfigModule } from '@nestjs/config';
+
 
 @Module({
-    imports: [GraphQLModule.forRoot<ApolloDriverConfig>({
-        driver: ApolloDriver,
-        graphiql: true,
-        autoSchemaFile: true
-    }), SurveyModule, PrismaModule],
+    imports: [
+        ConfigModule.forRoot(),
+        GraphQLModule.forRoot<ApolloDriverConfig>({
+            driver: ApolloDriver,
+            graphiql: true,
+            autoSchemaFile: true
+        }), SurveyModule, PrismaModule],
     controllers: [AppController],
     providers: [AppService, UserResolver, PrismaService, UserService],
 })
